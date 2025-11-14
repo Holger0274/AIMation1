@@ -8,6 +8,27 @@ This is the **AI.mation Landing Page** project - a strategic marketing website f
 
 **Current Status**: No code implementation exists yet. The repository contains only the strategic blueprint.
 
+## Getting Started with Implementation
+
+When ready to begin development, you have two approaches:
+
+### Option 1: Implement in Current Directory
+```bash
+# Initialize Next.js in current directory (will merge with existing files)
+npx create-next-app@latest . --no-git
+
+# Or initialize Vite + React
+npm create vite@latest . -- --template react
+```
+
+### Option 2: Create Subdirectory (Recommended)
+```bash
+# Keep planning docs separate from implementation
+npx create-next-app@latest aimation-landing --no-git
+cd aimation-landing
+npm install framer-motion react-icons react-hook-form
+```
+
 ## Planned Tech Stack
 
 When implementing this project, use the following stack as specified in the planning document:
@@ -23,26 +44,19 @@ When implementing this project, use the following stack as specified in the plan
 ### Alternative Stack
 If Next.js proves too complex, the plan allows for: **Vite + React + Tailwind**
 
-## Project Initialization Commands
-
-Since no code exists yet, start with:
-
+### Common Commands (After Project Setup)
 ```bash
-# Initialize Next.js project
-npx create-next-app@latest aimation-landing --no-git
-
-# Install dependencies
-cd aimation-landing
-npm install framer-motion react-icons react-hook-form
-
 # Development server
 npm run dev
 
 # Production build
 npm run build
 
-# Start production server
+# Start production server (Next.js)
 npm start
+
+# Start preview server (Vite)
+npm run preview
 ```
 
 ## Architecture Overview
@@ -185,19 +199,18 @@ The planning document is extremely detailed (26,000+ tokens) and contains:
 
 ## Git Strategy
 
-**Important**: This directory is **not currently a git repository**. When ready to implement:
+The repository is already initialized with git. Standard workflow:
 
 ```bash
-git init
+# Check status
+git status
+
+# Commit changes
 git add .
-git commit -m "Initial commit: AI.mation landing page strategic plan"
+git commit -m "Your commit message"
+
+# View history
+git log --oneline
 ```
 
-Consider `.gitignore` for:
-```
-node_modules/
-.next/
-out/
-.env*.local
-.vercel
-```
+A comprehensive `.gitignore` is already configured for Next.js/Vite projects.
