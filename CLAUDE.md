@@ -4,9 +4,26 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the **AI.mation Landing Page** project - a strategic marketing website for AI.mation, a German AI consulting service targeting SMBs (small and medium-sized businesses / KMUs). The project is currently in the **planning phase** with a comprehensive strategic plan documented in `AI-MATION-LANDING-PAGE-PLAN.md`.
+This is the **AI.mation Landing Page** project - a strategic marketing website for AI.mation, a German AI consulting service targeting SMBs (small and medium-sized businesses / KMUs).
 
-**Current Status**: No code implementation exists yet. The repository contains only the strategic blueprint.
+**Current Status**: Planning phase only. The repository contains:
+- ✅ `AI-MATION-LANDING-PAGE-PLAN.md` (26,000+ tokens) - Complete strategic blueprint
+- ✅ `.claude/agents/` - Three specialized development agents
+- ✅ `.gitignore` - Configured for Next.js/Vite projects
+- ❌ No code implementation yet
+
+**Repository Structure**:
+```
+/
+├── AI-MATION-LANDING-PAGE-PLAN.md    # Detailed strategy document
+├── CLAUDE.md                          # This file
+├── .claude/
+│   └── agents/
+│       ├── ux-ui-architect.md
+│       ├── landing-page-copywriter.md
+│       └── responsive-frontend-developer.md
+└── .gitignore
+```
 
 ## Getting Started with Implementation
 
@@ -174,6 +191,36 @@ CTA placement:
 - Lead magnet form
 - Final "Next Steps" section
 
+## Specialized Claude Agents
+
+This repository includes three specialized agents in `.claude/agents/` for the landing page development workflow:
+
+### 1. **ux-ui-architect** (Yellow)
+Use for designing structure, layout, and user experience:
+- Information architecture and section flow
+- Visual hierarchy and typography specifications
+- Mobile-first design patterns
+- Conversion optimization and CTA placement
+- Accessibility considerations
+
+### 2. **landing-page-copywriter** (Blue)
+Use for creating German marketing copy:
+- Headlines and subheadlines (Hauptüberschrift/Unterüberschrift)
+- Benefit-driven copy that answers "What's in it for me?"
+- Trust-building language and social proof
+- Action-oriented CTAs in natural German
+- Follows principle: Clarity over cleverness
+
+### 3. **responsive-frontend-developer** (Green)
+Use for implementing production-ready code:
+- Semantic HTML5 structure
+- Mobile-first CSS with Flexbox/Grid
+- Performance optimization (lazy loading, efficient selectors)
+- Cross-browser compatibility
+- WCAG AA accessibility standards
+
+**Recommended Workflow**: UX/UI Architect → Copywriter → Frontend Developer
+
 ## Development Guidelines
 
 1. **Keep it simple**: This is a landing page, not a web app. No complex state management needed.
@@ -181,6 +228,7 @@ CTA placement:
 3. **Component-per-section**: Each landing page section = one component
 4. **Semantic HTML**: Use `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`
 5. **Responsive by default**: Test all breakpoints (mobile, tablet, desktop)
+6. **Use specialized agents**: Leverage the three Claude agents above for their specific expertise
 
 ## Important Context from Planning Document
 
