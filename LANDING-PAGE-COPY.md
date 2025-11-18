@@ -1394,11 +1394,6 @@ Keine versteckten Kosten. Keine Überraschungen.
 ### MAIN CTA (sehr groß!)
 **Jetzt Erstgespräch vereinbaren**
 
-### Alternative CTA
-**Oder ruf uns direkt an:**
-**Tel: 01746075259**
-(Mo-Fr 9:00-18:00 Uhr)
-
 ### Microcopy
 30-60 Minuten | Unverbindlich | Remote oder vor Ort
 
@@ -1448,7 +1443,6 @@ KI-Transformation für KMUs. Transparent, agil, ROI-fokussiert.
 **Überschrift:** Kontakt
 
 **E-Mail:** info@aimation.de
-**Telefon:** 01746075259
 **Website:** www.aimation.de
 
 **Adresse:**

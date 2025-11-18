@@ -3303,7 +3303,6 @@ Due to the extensive length of the remaining sections, I'll provide a condensed 
 - Layout: 3 step cards with Magenta numbered badges
 - Steps: 1. Kostenloses Erstgespräch → 2. Discovery Workshop → 3. Transparentes Angebot
 - Final CTA: VERY LARGE Magenta button "Jetzt Erstgespräch vereinbaren"
-- Secondary: "Oder ruf uns an: 01746075259" (text link)
 - Spacing: py-16 (mobile) / py-32 (desktop) - extra space for final push
 
 **SECTION 17: FOOTER**
@@ -3312,7 +3311,7 @@ Due to the extensive length of the remaining sections, I'll provide a condensed 
 - Column 1: Logo + Tagline "Automatisierung mit Intelligenz"
 - Column 2: Schnelllinks (Leistungen, Use Cases, Schulungen, Blog, Kontakt)
 - Column 3: Legal (Impressum, Datenschutz, AGB)
-- Column 4: Kontakt (info@aimation.de, 01746075259, www.aimation.de) + Social icons
+- Column 4: Kontakt (info@aimation.de, www.aimation.de) + Social icons
 - All links: White text, hover Light Blue
 - Divider: Light Blue horizontal line above footer bottom
 - Footer bottom: "© 2025 AI.mation | Made with ❤ and AI" (White 70% opacity, centered)
@@ -3779,7 +3778,7 @@ When passing this specification to developers:
 
 **Launch Readiness:**
 - [ ] All CTAs point to correct URLs (or are properly disabled if mock)
-- [ ] Contact information correct (info@aimation.de, 01746075259, www.aimation.de)
+- [ ] Contact information correct (info@aimation.de, www.aimation.de)
 - [ ] Legal pages linked (Impressum, Datenschutz, AGB)
 - [ ] Meta tags configured (title, description, OG tags)
 - [ ] Favicon added

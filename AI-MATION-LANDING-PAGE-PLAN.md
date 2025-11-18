@@ -314,9 +314,8 @@ Break-Even: 3-6 Monate. ROI: 300-500% über 3 Jahre.
 **Copy:**
 1. Kostenloses Erstgespräch (30-60 Min, unverbindlich)
 2. Discovery Workshop (Optional, 1-2 Tage) → AI Readiness Report
-3. Transparentes Angebot (Use Cases, ROI, Zeitrahmen, Deliverables)  
-**CTA:** "Jetzt Erstgespräch vereinbaren" (Magenta, SEHR groß)  
-**Sekundär:** "Oder ruf uns an: 01746075259"  
+3. Transparentes Angebot (Use Cases, ROI, Zeitrahmen, Deliverables)
+**CTA:** "Jetzt Erstgespräch vereinbaren" (Magenta, SEHR groß)
 **Farben:** Weiß-Hintergrund, Hellblau-Step-Cards, Magenta-Nummern & CTA
 
 ---
@@ -327,8 +326,8 @@ Break-Even: 3-6 Monate. ROI: 300-500% über 3 Jahre.
 - Logo & Tagline: "Automatisierung mit Intelligenz"
 - Schnelllinks: Leistungen, Über uns, Blog, Kontakt
 - Legal: Impressum, Datenschutz, AGB
-- Kontakt: info@aimation.de, 01746075259, www.aimation.de | Social Media Icons  
-**Footer-Bottom:** "© 2025 AI.mation | Made with ❤️ and AI"  
+- Kontakt: info@aimation.de, www.aimation.de | Social Media Icons
+**Footer-Bottom:** "© 2025 AI.mation | Made with ❤️ and AI"
 **Farben:** Navy-Hintergrund, weißer Text, Hellblau-Links (Hover), Hellblau-Trennlinie
 
 ---
@@ -457,7 +456,7 @@ Das Ergebnis: KI, die funktioniert – und Teams befähigt statt überfordert.
 **Content:**
 - [ ] Use Cases haben Status-Badge
 - [ ] ROI-Zahlen haben Disclaimer
-- [ ] Kontakt korrekt (info@aimation.de, 01746075259, www.aimation.de)
+- [ ] Kontakt korrekt (info@aimation.de, www.aimation.de)
 - [ ] Du-Ansprache durchgehend
 
 **Design:**

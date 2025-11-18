@@ -84,17 +84,6 @@ export default function NextSteps() {
             Jetzt Erstgespräch vereinbaren
           </a>
           
-          {/* Phone Alternative */}
-          <div className="flex items-center justify-center text-gray-600 mt-4">
-            <FiPhone className="mr-2 text-lightblue" />
-            <span>Oder ruf uns an: </span>
-            <a
-              href="tel:01746075259"
-              className="ml-2 text-lightblue font-semibold hover:text-magenta transition-colors"
-            >
-              01746075259
-            </a>
-          </div>
 
           {/* Trust Elements */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">

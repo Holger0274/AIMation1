@@ -107,14 +107,6 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:01746075259"
-                  className="hover:text-lightblue transition-colors duration-200"
-                >
-                  01746075259
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://www.aimation.de"
                   target="_blank"
                   rel="noopener noreferrer"

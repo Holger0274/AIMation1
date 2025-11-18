@@ -102,7 +102,6 @@ http://localhost:3000
 
 - **Website**: www.aimation.de
 - **E-Mail**: info@aimation.de
-- **Telefon**: 01746075259
 
 ## 📝 Lizenz
 

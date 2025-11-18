@@ -45,7 +45,6 @@ Diese Landing Page kann **direkt im Browser geöffnet** werden - keine Installat
 ## 📞 Kontakt
 
 - **E-Mail**: info@aimation.de
-- **Telefon**: 01746075259
 - **Website**: www.aimation.de
 
 ## 💡 Hinweis
