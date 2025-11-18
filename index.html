@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KI-Transformation für KMUs in 2-4 Wochen. Von AI Audit bis Multi-Agent-Systeme. ROI-fokussiert, transparent, agil. Jetzt kostenloses Erstgespräch!">
+    <meta name="keywords" content="KI-Beratung für KMUs, AI-Transformation Mittelstand, Microsoft Copilot Training, Multi-Agent-Systeme, KI-Automatisierung">
+    <title>KI-Beratung für KMUs | AI.mation - Transparent & ROI-fokussiert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #031d44;
+            --magenta: #f90093;
+            --lightblue: #60AFFF;
+            --white: #ffffff;
+            --black: #071013;
+            --gray: #6b7280;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--black);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--navy);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--lightblue);
+        }
+        
+        .cta-button {
+            background: var(--magenta);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(249, 0, 147, 0.4);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #052a5a 70%, var(--lightblue) 100%);
+            color: var(--white);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            margin-top: 70px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .secondary-link {
+            color: var(--lightblue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        /* Common Styles */
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-4 { margin-bottom: 2rem; }
+        
+        /* Grid */
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--white);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        /* Background Colors */
+        .bg-navy {
+            background: linear-gradient(135deg, var(--navy) 0%, #052a5a 100%);
+            color: var(--white);
+        }
+        
+        .bg-white {
+            background: var(--white);
+        }
+        
+        /* Status Badge */
+        .badge {
+            display: inline-block;
+            background: var(--magenta);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: 3rem 2rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        footer a {
+            color: var(--lightblue);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--magenta);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">AI.mation</a>
+            <ul class="nav-links">
+                <li><a href="#services">Leistungen</a></li>
+                <li><a href="#process">Prozess</a></li>
+                <li><a href="#usecases">Use Cases</a></li>
+                <li><a href="#training">Schulungen</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#contact" class="cta-button">Erstgespräch buchen</a></li>
+            </ul>
+            <span class="mobile-menu">☰</span>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1>Von 3 Wochen Recherche zu 30 Minuten Entscheidungsgrundlage</h1>
+            <p>Wir helfen KMUs, KI vollständig zu integrieren – von Microsoft Copilot Training bis zu Multi-Agent-Systemen. Transparent, agil, ROI-fokussiert.</p>
+            <p>Du weißt, dass KI dein Unternehmen voranbringen kann. Du weißt nur nicht, wo du anfangen sollst.</p>
+            <p>Wir zeigen dir in 2-4 Wochen, welche Use Cases bei dir funktionieren – mit konkreten Zahlen, transparenten Kosten und echten Prototypen.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button">Kostenloses Erstgespräch buchen</a>
+                <a href="#process" class="secondary-link">Wie wir arbeiten →</a>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">30-60 Minuten | Unverbindlich | Für KMUs entwickelt</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Problem/Solution -->
+    <section class="bg-white" id="problem">
+        <div class="container">
+            <h2>Warum 85% der KI-Projekte scheitern (und wie du es richtig machst)</h2>
+            <p class="text-center mb-4" style="max-width: 800px; margin: 0 auto 2rem;">Die meisten KI-Beratungen starten mit der Technologie. Das Ergebnis:</p>
+            <div class="grid grid-3 mb-4">
+                <div class="card">
+                    <h3>67%</h3>
+                    <p>kommen nicht über die Pilotphase hinaus (McKinsey)</p>
+                </div>
+                <div class="card">
+                    <h3>3 von 4</h3>
+                    <p>Unternehmen haben keine KI-Strategie (Deloitte)</p>
+                </div>
+                <div class="card">
+                    <h3>58%</h3>
+                    <p>der Teams fühlen sich überfordert (Harvard Business Review)</p>
+                </div>
+            </div>
+            <h3 class="text-center">Unser Ansatz ist anders:</h3>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>✓ Fundament vor Technologie</h3>
+                    <p>AI Readiness Check vor Tool-Auswahl</p>
+                </div>
+                <div class="card">
+                    <h3>✓ Strategie vor Tools</h3>
+                    <p>Use Case Roadmap mit ROI-Prognose</p>
+                </div>
+                <div class="card">
+                    <h3>✓ Enablement vor Abhängigkeit</h3>
+                    <p>Dein Team lernt, KI selbst zu nutzen</p>
+                </div>
+            </div>
+            <p class="text-center" style="margin-top: 2rem; font-weight: 600;">Das Ergebnis: Break-Even in 3-6 Monaten statt endloser Experimente.</p>
+        </div>
+    </section>
+
+    <!-- Section 3: 4-Phasen-Prozess -->
+    <section class="bg-navy" id="process">
+        <div class="container">
+            <h2 style="color: var(--white);">Der AI.mation Weg: Fundament → Strategie → Enablement → Umsetzung</h2>
+            <p class="text-center mb-4">Kein Chaos, keine Black Box. Unser strukturierter 4-Phasen-Prozess macht KI-Integration planbar.</p>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">🔍</div>
+                    <h3>1. Fundament legen</h3>
+                    <p>Dauer: 1-2 Wochen</p>
+                    <p>Wir analysieren, wo dein Unternehmen steht – technisch, organisatorisch und kulturell.</p>
+                    <p style="margin-top: 1rem; font-weight: 600; color: var(--magenta);">Deliverable: AI Readiness Report</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">♟️</div>
+                    <h3>2. Strategie entwickeln</h3>
+                    <p>Dauer: 1-2 Wochen</p>
+                    <p>Wir identifizieren die Use Cases mit dem höchsten ROI.</p>
+                    <p style="margin-top: 1rem; font-weight: 600; color: var(--magenta);">Deliverable: Use Case Roadmap mit ROI-Analyse</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">👥</div>
+                    <h3>3. Team befähigen</h3>
+                    <p>Dauer: 2-4 Wochen</p>
+                    <p>Enablement ist der Kern unseres Ansatzes.</p>
+                    <p style="margin-top: 1rem; font-weight: 600; color: var(--magenta);">Deliverable: Befähigtes Team</p>
+                </div>
+                <div class="card" style="grid-column: span 3;">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">🚀</div>
+                    <h3 class="text-center">4. Schnell umsetzen</h3>
+                    <p class="text-center">Dauer: 2-4 Wochen</p>
+                    <p class="text-center">Rapid Prototyping statt endloser Konzeptphase. In 2-4 Wochen hast du funktionierende Prototypen.</p>
+                    <p style="margin-top: 1rem; font-weight: 600; color: var(--magenta); text-align: center;">Deliverable: Nutzbare KI-Lösungen mit messbarem ROI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Services -->
+    <section class="bg-white" id="services">
+        <div class="container">
+            <h2>Von Microsoft Copilot bis Custom AI: Unser komplettes Portfolio</h2>
+            <p class="text-center mb-4">Egal, ob du gerade erst mit KI startest oder schon fortgeschrittene Multi-Agent-Systeme brauchst – wir begleiten dich auf jedem Level.</p>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>📘 Microsoft Copilot Training</h3>
+                    <p>Du hast Microsoft 365? Dann hast du bereits KI.</p>
+                    <p style="margin-top: 1rem; color: var(--lightblue); font-weight: 600;">Zeitersparnis: 40-60%</p>
+                </div>
+                <div class="card">
+                    <h3>🎓 KI-Schulungen</h3>
+                    <p>Nach Zielgruppen: Management, Teams, Technical</p>
+                </div>
+                <div class="card">
+                    <h3>⚙️ KI-Automatisierung</h3>
+                    <p>make.com, n8n, Power Automate</p>
+                </div>
+                <div class="card">
+                    <h3>💬 Custom GPT-Entwicklung</h3>
+                    <p>Maßgeschneiderte Assistenten für deine Prozesse</p>
+                </div>
+                <div class="card" style="border: 3px solid var(--magenta);">
+                    <span class="badge">⭐ FLAGSHIP</span>
+                    <h3>🤖 Multi-Agent-Systeme</h3>
+                    <p>KI-Expert-Teams, die parallel für dich arbeiten</p>
+                    <p style="margin-top: 1rem; color: var(--magenta); font-weight: 600;">Von 3 Wochen zu 30 Minuten!</p>
+                </div>
+                <div class="card">
+                    <h3>🔗 Agentische Systeme</h3>
+                    <p>Autonome KI-Workflows</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 Maßgeschneiderte Lösungen</h3>
+                    <p>PoC in 2-4 Wochen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Multi-Agent Highlight -->
+    <section class="bg-navy" id="multiagent">
+        <div class="container">
+            <h2 style="color: var(--white);">Multi-Agent-Systeme: KI-Expert-Teams, die für dich arbeiten</h2>
+            <p class="text-center mb-4" style="font-size: 1.5rem; color: var(--magenta); font-weight: 700;">Von 3 Wochen Recherche zu 30 Minuten Entscheidungsgrundlage</p>
+            <div class="card" style="max-width: 900px; margin: 0 auto;">
+                <h3>Beispiel: Produktentwicklung</h3>
+                <p>Normalerweise: 3-4 Wochen für Technik-, Patent-, Markt-, Finance- und Compliance-Recherche.</p>
+                <p style="margin-top: 1rem; font-weight: 600;">Mit 5 KI-Agenten parallel: 30-60 Minuten für einen komprehensiven Report!</p>
+                <p style="margin-top: 1rem; color: var(--lightblue);">✓ Human in the Loop: Du entscheidest, die Agenten recherchieren.</p>
+                <a href="#contact" class="cta-button" style="margin-top: 1.5rem;">Multi-Agent-System explorieren</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Use Cases -->
+    <section class="bg-white" id="usecases">
+        <div class="container">
+            <h2>Use Cases in Entwicklung: Transparent, agil, ROI-fokussiert</h2>
+            <p class="text-center mb-4">Wir zeigen den echten Status – keine leeren Versprechen.</p>
+            <div class="grid grid-3">
+                <div class="card">
+                    <span class="badge">Konzeptphase</span>
+                    <h3>🔬 Patent-Intelligence</h3>
+                    <p>Zeitersparnis: 60-70%</p>
+                </div>
+                <div class="card">
+                    <span class="badge">In Entwicklung</span>
+                    <h3>🗂️ Intelligente Wissensdatenbank</h3>
+                </div>
+                <div class="card">
+                    <span class="badge">In Entwicklung</span>
+                    <h3>💼 Meeting-Verarbeitung</h3>
+                    <p>Zeitersparnis: 90%, PoC: 2-3 Wochen</p>
+                </div>
+                <div class="card">
+                    <span class="badge">PoC-Phase</span>
+                    <h3>💰 Kundengesprächs-Vorbereitung</h3>
+                    <p>Zeitersparnis: 90%</p>
+                </div>
+                <div class="card">
+                    <span class="badge">PoC-Phase</span>
+                    <h3>👥 Recruiting Automation</h3>
+                    <p>Zeitersparnis: 50-70%</p>
+                </div>
+                <div class="card">
+                    <span class="badge">In Entwicklung</span>
+                    <h3>🎧 Intelligente Chat Bots</h3>
+                    <p>60-80% automatisch gelöst</p>
+                </div>
+                <div class="card">
+                    <span class="badge">In Entwicklung</span>
+                    <h3>📝 Content-Repurposing</h3>
+                    <p>5x mehr Content</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7-16: Simplified -->
+    <section class="bg-navy" id="training">
+        <div class="container">
+            <h2 style="color: var(--white);">Enablement statt Abhängigkeit: Unser Schulungsportfolio</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>👥 Für alle</h3>
+                    <p>Einstieg KI, Microsoft Copilot ⭐</p>
+                </div>
+                <div class="card">
+                    <h3>💼 Manager</h3>
+                    <p>Professionelles Prompting, KI Transformation</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 Führung</h3>
+                    <p>KI für Führungskräfte</p>
+                </div>
+                <div class="card">
+                    <h3>🛠️ Technical</h3>
+                    <p>Automatisierung ohne Code, KI-Coden, Custom GPT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: ROI -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>Break-Even in 3-6 Monaten: So rechnet sich KI</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3 style="color: var(--magenta);">40-60%</h3>
+                    <p>Meeting-Nachbereitung</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--magenta);">70-80%</h3>
+                    <p>Patent-Analyse</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--magenta);">75%</h3>
+                    <p>Dokumenten-Verarbeitung</p>
+                </div>
+            </div>
+            <p class="text-center" style="margin-top: 2rem;"><strong>ROI: 300-500% über 3 Jahre</strong></p>
+            <p class="text-center" style="font-size: 0.9rem; color: var(--gray); margin-top: 1rem;">Zahlen basierend auf Studien (McKinsey, Deloitte, HBR). Individuelle Ergebnisse variieren.</p>
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="#contact" class="cta-button">ROI für mein Unternehmen berechnen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 15: Lead Magnet -->
+    <section class="bg-navy" id="contact">
+        <div class="container">
+            <h2 style="color: var(--white);">Finde heraus: Wo kann KI in deinem Unternehmen 30%+ Zeit sparen?</h2>
+            <div class="card" style="max-width: 600px; margin: 0 auto;">
+                <form>
+                    <input type="text" placeholder="Vorname *" required style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 0.5rem;">
+                    <input type="text" placeholder="Nachname *" required style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 0.5rem;">
+                    <input type="text" placeholder="Firma *" required style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 0.5rem;">
+                    <input type="email" placeholder="E-Mail *" required style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 0.5rem;">
+                    <input type="tel" placeholder="Telefon (optional)" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 0.5rem;">
+                    <textarea placeholder="Nachricht (optional)" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 0.5rem; min-height: 100px;"></textarea>
+                    <button type="submit" class="cta-button" style="width: 100%; border: none; cursor: pointer; font-size: 1.1rem;">KI-POTENZIAL ANALYSIEREN</button>
+                </form>
+                <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--gray);">Du erhältst: AI Readiness | 3-5 Use Cases | ROI-Schätzung</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 16: Next Steps -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>In 3 Schritten zu deiner KI-Strategie</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="background: var(--magenta); color: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; margin: 0 auto 1rem;">1</div>
+                    <h3>Kostenloses Erstgespräch</h3>
+                    <p>30-60 Min, unverbindlich</p>
+                </div>
+                <div class="card">
+                    <div style="background: var(--magenta); color: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; margin: 0 auto 1rem;">2</div>
+                    <h3>Discovery Workshop</h3>
+                    <p>Optional, 1-2 Tage → AI Readiness Report</p>
+                </div>
+                <div class="card">
+                    <div style="background: var(--magenta); color: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; margin: 0 auto 1rem;">3</div>
+                    <h3>Transparentes Angebot</h3>
+                    <p>Use Cases, ROI, Zeitrahmen, Deliverables</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="#contact" class="cta-button" style="font-size: 1.25rem; padding: 1rem 2.5rem;">Jetzt Erstgespräch vereinbaren</a>
+                <p style="margin-top: 1rem;">Oder ruf uns an: <a href="tel:01746075259" style="color: var(--lightblue); font-weight: 600;">01746075259</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 17: Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 style="color: var(--white);">AI.mation</h3>
+                    <p>Automatisierung mit Intelligenz</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--white);">Schnelllinks</h4>
+                    <p><a href="#services">Leistungen</a></p>
+                    <p><a href="#process">Prozess</a></p>
+                    <p><a href="#usecases">Use Cases</a></p>
+                    <p><a href="#training">Schulungen</a></p>
+                </div>
+                <div>
+                    <h4 style="color: var(--white);">Legal</h4>
+                    <p><a href="#">Impressum</a></p>
+                    <p><a href="#">Datenschutz</a></p>
+                    <p><a href="#">AGB</a></p>
+                </div>
+                <div>
+                    <h4 style="color: var(--white);">Kontakt</h4>
+                    <p><a href="mailto:info@aimation.de">info@aimation.de</a></p>
+                    <p><a href="tel:01746075259">01746075259</a></p>
+                    <p><a href="http://www.aimation.de">www.aimation.de</a></p>
+                </div>
+            </div>
+            <div class="text-center" style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 2rem;">
+                <p>© 2025 AI.mation | Made with ❤️ and AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Vielen Dank für dein Interesse! Dies ist eine Demo-Seite. In der finalen Version würden deine Daten jetzt sicher übermittelt.');
+        });
+    </script>
+</body>
+</html>
